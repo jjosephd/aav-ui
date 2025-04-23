@@ -1,3 +1,9 @@
+/**
+ * Privacy Policy
+ * Codebase Author: Jordan Daniel
+ * Date: 4/23/2025
+ *
+ */
 const privacyData = [
   {
     title: 'LOG DATA',
