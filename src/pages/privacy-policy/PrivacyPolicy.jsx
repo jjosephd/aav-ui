@@ -1,5 +1,6 @@
 import React from 'react';
 import privacyData from './data';
+import { Link } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
   const midpoint = Math.ceil(privacyData.length / 2); // Create midpoint to divide data
@@ -71,6 +72,11 @@ const PrivacyPolicy = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="btn-container flex justify-center m-12">
+          <Link to={'/'} className="btn btn-info">
+            Return Home
+          </Link>
         </div>
       </div>
     </div>
