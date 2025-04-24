@@ -26,16 +26,16 @@ const NavBar = () => {
       } bg-purple-900 p-4 md:p-6 lg:p-8`}
     >
       <ul className="flex justify-between items-center">
-        <li className="text-white">
-          <Link to="/">
-            <img src={default_logo} alt="Logo" className="h-5" />
-          </Link>
-        </li>
         <li className="privacy-link hidden md:block">
           <Link to="/privacy-policy" className="text-white">
             <span className="text-white inline-block transform transition-transform duration-300 hover:scale-105">
               Privacy Policy
             </span>
+          </Link>
+        </li>
+        <li className="text-white">
+          <Link to="/">
+            <img src={default_logo} alt="Logo" className="h-6" />
           </Link>
         </li>
         <li className="privacy-link hidden md:block">

@@ -10,7 +10,9 @@ const PrivacyPolicy = () => {
     <div>
       <div className="privacy-container  h-screen p-8">
         <header className="header-container overflow-scroll m-2 flex flex-col justify-center items-center">
-          <h1 className="text-3xl ">All Americans Vote Privacy Policy</h1>
+          <h1 className="text-3xl text-center">
+            All Americans Vote Privacy Policy
+          </h1>
 
           <div className="menu dropdown-content bg-base-100">
             <p className="m-4 text-xs text-center max-w-[800px] mx-auto">

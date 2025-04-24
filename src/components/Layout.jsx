@@ -3,14 +3,14 @@ import BottomNav from './BottomNav';
 import NavBar from './NavBar';
 const Layout = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <header>
         <NavBar />
       </header>
-      <main className="relative flex flex-col mt-36 items-center min-h-screen">
+      <main className="flex-grow pt-36 px-4 pb-84 md:pb-0">
         <Outlet />
       </main>
-      <footer>
+      <footer className="mt-auto">
         <BottomNav />
       </footer>
     </div>
