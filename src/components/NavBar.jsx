@@ -27,16 +27,22 @@ const NavBar = () => {
     >
       <ul className="flex justify-between items-center">
         <li className="text-white">
-          <img src={default_logo} alt="Logo" className="h-5" />
-        </li>
-        <li className="privacy-link hidden md:block">
-          <Link to="/privacy-policy" className="text-white">
-            Privacy Policy
+          <Link to="/">
+            <img src={default_logo} alt="Logo" className="h-5" />
           </Link>
         </li>
         <li className="privacy-link hidden md:block">
           <Link to="/privacy-policy" className="text-white">
-            Sweepstakes Rules
+            <span className="text-white inline-block transform transition-transform duration-300 hover:scale-105">
+              Privacy Policy
+            </span>
+          </Link>
+        </li>
+        <li className="privacy-link hidden md:block">
+          <Link to="/privacy-policy">
+            <span className="text-white inline-block transform transition-transform duration-300 hover:scale-105">
+              Sweepstakes Rules
+            </span>
           </Link>
         </li>
         <li className="md:hidden">
