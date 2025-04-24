@@ -23,7 +23,7 @@ const NavBar = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out ${
         isScrolled ? '-translate-y-full' : 'translate-y-0'
-      } bg-black p-4 md:p-6 lg:p-8`}
+      } bg-purple-900 p-4 md:p-6 lg:p-8`}
     >
       <ul className="flex justify-between items-center">
         <li className="text-white">

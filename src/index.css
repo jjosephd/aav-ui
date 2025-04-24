@@ -3,3 +3,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}

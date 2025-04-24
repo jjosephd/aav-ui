@@ -8,14 +8,12 @@ const PrivacyPolicy = () => {
   const rightData = privacyData.slice(midpoint); // Right column data
   return (
     <div>
-      <div className="privacy-container  h-screen">
-        <header className="header-container overflow-scroll m-2">
-          <h1 className="text-3xl text-center">
-            All Americans Vote Privacy Policy
-          </h1>
+      <div className="privacy-container  h-screen p-8">
+        <header className="header-container overflow-scroll m-2 flex flex-col justify-center items-center">
+          <h1 className="text-3xl ">All Americans Vote Privacy Policy</h1>
 
-          <div className="menu dropdown-content bg-base-100 rounded-box z-1 min-w-[300px] shadow-sm">
-            <p className="m-4 text-xs text-center">
+          <div className="menu dropdown-content bg-base-100">
+            <p className="m-4 text-xs text-center max-w-[800px] mx-auto">
               This policy (“Privacy Policy”) governs the use of this website
               (“Site”) as well as social media accounts and other communication
               platforms operated by All Americans Vote (“AAV”). At AAV, we are
@@ -72,11 +70,6 @@ const PrivacyPolicy = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className="btn-container flex justify-center m-12">
-          <Link to={'/'} className="btn btn-info">
-            Return Home
-          </Link>
         </div>
       </div>
     </div>
