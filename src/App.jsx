@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/campaigns/beyonce" element={<Beyonce />} />
+          <Route path="/campaigns/kendrick" element={<Beyonce />} />
         </Route>
       </Routes>
     </>
