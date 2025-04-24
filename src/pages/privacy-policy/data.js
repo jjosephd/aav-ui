@@ -1,54 +1,53 @@
-/**
- * Privacy Policy
- * Codebase Author: Jordan Daniel
- * Date: 4/23/2025
- *
- */
 const privacyData = [
   {
-    title: 'LOG DATA',
+    title: 'INFORMATION COLLECTION AND USE',
     content:
-      'We may collect information that your browser sends whenever you visit our Service ("LogData"). This Log Data may include information such as your computer\'s Internet Protocol ("IP") address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.',
+      'While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you as an individual. Personally identifiable information (“Personal Information”) may include, but is not limited to: Name, Email address, Phone number, Username/password when you choose to create an account with us, Information used to identify your social media accounts if you choose to share this information with us. Please do not send or disclose to us any sensitive Personal Information, like unique government identification numbers (e.g., a Social Security number), information related to race or ethnicity, religious or other beliefs, health information, your biometrics or genetic characteristics, or information related to your criminal background.',
   },
   {
-    title: 'COOKIES',
+    title: 'HOW DO WE USE YOUR INFORMATION?',
     content:
-      'Cookies are files with small amounts of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer’s hard drive. We use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.',
+      'We may use the information we collect to: Provide, maintain, and improve our Site; Deliver the information you request and send confirmations/receipts; Send technical notices, updates, security alerts, and admin messages; Respond to emails, questions, and feedback; Solicit volunteers and support; Enable participation in promotions; Conduct internal audits, prevent fraud, enhance features; and carry out any other purposes described at the time the information was collected.',
   },
   {
-    title: 'SERVICE PROVIDERS',
+    title: 'HOW DO WE SHARE YOUR INFORMATION?',
     content:
-      'We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services, or to assist us in analyzing how our Service is used.These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.',
+      'We may share your information with: Vendors, service providers, or consultants working on our behalf; Like-minded organizations, campaigns, or causes; Third-party sweepstakes sponsors; Brokers (with legal or contractual limits); Public authorities if required by law; and in cases of fraud, abuse, or threats to safety. All sharing is in good faith and in accordance with applicable laws.',
   },
   {
-    title: 'SECURITY',
+    title: 'DATA COLLECTION TECHNOLOGIES',
     content:
-      'The security of your Personal Information is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.',
+      'We may collect data such as IP address, browser version, pages visited, time on site, and other stats ("Log Data"). We also use cookies to collect information. Cookies are small files stored on your device and can be controlled or blocked through your browser settings. Disabling cookies may affect functionality of parts of our Service.',
   },
   {
-    title: 'YOUR CHOICES',
+    title: 'HOW WE PROTECT AND SHARE YOUR DATA',
     content:
-      'If you no longer want to receive notification emails from us, you may opt-out by using the opt-out/unsubscribe mechanism contained in each email. Please note that if you opt out of receiving notification emails from us, we may still send you important administrative messages, from which you cannot opt out.If you no longer want to receive SMS/text messages from us, you may opt out by using the opt-out/unsubscribe mechanism contained in each SMS/text message. If you would like to update Personal Information that you have provided to us, you may write to us at contact@allamericans.org.',
+      'We may employ third-party companies and individuals to help us deliver or analyze the Service. These parties have limited access and are prohibited from disclosing your data for any unrelated purposes. While we take reasonable steps to protect your data, no transmission or storage method is 100% secure. We cannot guarantee absolute security, but we strive to use commercially acceptable means to protect your Personal Information.',
+  },
+  {
+    title: 'YOUR RIGHTS & HOW TO REACH US',
+    content:
+      'You can opt out of emails by using the unsubscribe link in any message. Administrative emails may still be sent. To stop SMS/texts, follow opt-out instructions in each message. To update your information, email contact@allamericans.org. For any questions about this policy or your data rights, you may contact us at contact@allamericans.org.',
   },
   {
     title: 'LINKS TO OTHER SITES',
     content:
-      'Our Service may contain links to other sites that are not operated by us. If you click on a third- party link, you will be directed to that third party’s site. We strongly advise you to review the Privacy Policy of every site you visit.We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
+      'Our Service may contain links to external sites not operated by us. Once you leave our domain, we have no control over and take no responsibility for the content, privacy practices, or policies of those sites. Please review each site’s privacy policy before engaging.',
   },
   {
     title: 'CHILDREN’S PRIVACY',
     content:
-      'Our Service does not address anyone under the age of 18 (“Children”).We do not knowingly collect personally identifiable information from children under 18. If you are a parent or guardian and you are aware that your child has provided us with Personal Information, please contact us. If we discover that a child under 18 has provided us with Personal Information, we will delete such information from our servers immediately.',
+      'Our Service is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you’re a parent or guardian and believe your child has submitted data, please contact us. We will delete such data immediately.',
   },
   {
-    title: 'COMPLIANCE LAWS',
+    title: 'COMPLIANCE WITH LAWS',
     content:
-      '‍We will disclose your Personal Information where required to do so by law or subpoena.',
+      'We will disclose your Personal Information where required by law, subpoena, or other legal processes. This includes lawful requests by public authorities for national security or law enforcement purposes.',
   },
   {
-    title: 'CONTACT US',
+    title: 'UPDATES TO THIS POLICY',
     content:
-      '‍If you have any questions about this Privacy Policy, please contact us at contact@allamericans.org.',
+      'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last Revised” date. We encourage you to review this policy periodically for the latest information on our privacy practices.',
   },
 ];
 export default privacyData;
