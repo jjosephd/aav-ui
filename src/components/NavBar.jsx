@@ -1,29 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Bars3Icon } from '@heroicons/react/20/solid';
+import default_logo from '../assets/logo/default_logo.png';
 
 const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <>
-      <nav className="nav-container min-w-screen bg-black p-8">
-        <ul className="flex justify-between">
-          <li className="text-white">Logo</li>
-          <li className="privacy-link hidden md:block">
-            <Link to="/privacy-policy" className=" text-white">
-              Privacy Policy
-            </Link>
-          </li>
-          <li className="privacy-link hidden md:block">
-            <Link to="/privacy-policy" className=" text-white">
-              Sweepstakes Rules
-            </Link>
-          </li>
-          <li className="md:hidden">
-            <Bars3Icon className="h-6 w-6 text-white" />
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out ${
+        isScrolled ? '-translate-y-full' : 'translate-y-0'
+      } bg-black p-4 md:p-6 lg:p-8`}
+    >
+      <ul className="flex justify-between items-center">
+        <li className="text-white">
+          <img src={default_logo} alt="Logo" className="h-5" />
+        </li>
+        <li className="privacy-link hidden md:block">
+          <Link to="/privacy-policy" className="text-white">
+            Privacy Policy
+          </Link>
+        </li>
+        <li className="privacy-link hidden md:block">
+          <Link to="/privacy-policy" className="text-white">
+            Sweepstakes Rules
+          </Link>
+        </li>
+        <li className="md:hidden">
+          <Bars3Icon className="h-6 w-6 text-white" />
+        </li>
+      </ul>
+    </nav>
   );
 };
 
