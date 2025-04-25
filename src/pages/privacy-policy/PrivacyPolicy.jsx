@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
             All Americans Vote Privacy Policy
           </h1>
 
-          <div className="menu dropdown-content bg-base-100">
+          <div className="menu dropdown-content mb-12">
             <p className="m-4 text-xs text-center max-w-[800px] mx-auto">
               This policy (“Privacy Policy”) governs the use of this website
               (“Site”) as well as social media accounts and other communication
