@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { FaArrowLeft, FaArrowRight, FaPause, FaPlay } from 'react-icons/fa';
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaPause,
+  FaPlay,
+  FaMapPin,
+} from 'react-icons/fa';
 import { useDrag } from '@use-gesture/react';
-import { useSprings, animated } from '@react-spring/web';
+import { useSprings, animated, useTransition } from '@react-spring/web';
 import carouselData from './carouselData';
 import { carouselData2 } from './carouselData';
 
@@ -23,6 +29,15 @@ const Carousel = () => {
       blur: Math.abs(offset) > 2 ? 4 : offset === 0 ? 0 : 2,
       config: { tension: 280, friction: 30 },
     };
+  });
+
+  // transitions for the current index
+  const transitions = useTransition(currentIndex, {
+    key: currentIndex,
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { duration: 400 }, // Smooth but quick fade
   });
 
   useEffect(() => {
@@ -95,7 +110,6 @@ const Carousel = () => {
           </animated.div>
         ))}
       </div>
-
       <div className="flex justify-center gap-4 mt-6">
         <button
           className="btn btn-primary"
@@ -118,6 +132,51 @@ const Carousel = () => {
         <div className="mt-2 text-sm text-gray-500">
           {currentIndex + 1} / {carouselData.length}
         </div>
+      </div>
+      <div className="relative mt-4 h-6">
+        {transitions((style, index) => (
+          <animated.div
+            style={style}
+            className="absolute left-1/2 -translate-x-1/2 text-purple-900 font-semibold text-lg"
+          >
+            <div className="info-container">
+              <ul className="flex flex-col justify-center items-center text-center">
+                <li>
+                  <h2 className="text-lg font-semibold">
+                    {carouselData2[index].header}
+                  </h2>
+                </li>
+
+                {carouselData2[index].date.trim().toLowerCase() ===
+                'coming soon' ? (
+                  <li className="mt-2">
+                    <div className="w-sm btn btn-outlined rounded-full disabled cursor-not-allowed uppercase">
+                      Coming Soon
+                    </div>
+                  </li>
+                ) : (
+                  <>
+                    <li className="flex items-center gap-1 mt-1 text-xs text-slate-600">
+                      <FaMapPin className="h-4 w-4 text-slate-600/50" />
+                      <span className="font-light">
+                        {carouselData2[index].date} |{' '}
+                        {carouselData2[index].city}
+                      </span>
+                    </li>
+                    <li className="text-xs text-black mt-1">
+                      {carouselData2[index].details}
+                    </li>
+                    <li className="mt-3">
+                      <button className="btn bg-purple-900 text-white hover:bg-purple-900/90 w-sm rounded-full uppercase">
+                        Enter Here
+                      </button>
+                    </li>
+                  </>
+                )}
+              </ul>
+            </div>
+          </animated.div>
+        ))}
       </div>
     </div>
   );
