@@ -3,7 +3,7 @@ import React from 'react';
 const SideNav = () => {
   return (
     <div>
-      <nav className="hidden md:flex bg-purple-900 text-white text-xs rounded-lg shadow-lg pr-6 w-2/5 ">
+      <nav className="hidden md:flex bg-purple-900 text-white text-xs rounded-lg shadow-lg pr-6 w-5/5 ">
         <ul className="flex flex-col ">
           <li className="py-2 px-4 rounded-lg hover:underline">
             <a href="#" className="text-white">
