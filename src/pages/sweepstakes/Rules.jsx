@@ -231,24 +231,7 @@ const Rules = () => {
                   eligible entries.
                 </p>
               </section>
-              <section id="general-release">
-                <h2 className="font-bold">General Release</h2>
-                <p>
-                  BY ENTERING THE SWEEPSTAKES, YOU RELEASE SPONSOR AND ALL
-                  RELEASED PARTIES FROM ANY LIABILITY WHATSOEVER, AND WAIVE ANY
-                  AND ALL CAUSES OF ACTION, RELATED TO ANY CLAIMS, COSTS,
-                  INJURIES, LOSSES, OR DAMAGES OF ANY KIND ARISING OUT OF OR IN
-                  CONNECTION WITH THE SWEEPSTAKES OR DELIVERY, MISDELIVERY,
-                  ACCEPTANCE, POSSESSION, USE OF OR INABILITY TO USE ANY PRIZE
-                  (INCLUDING, WITHOUT LIMITATION, CLAIMS, COSTS, INJURIES,
-                  LOSSES, AND DAMAGES RELATED TO PERSONAL INJURIES, DEATH,
-                  DAMAGE TO OR DESTRUCTION OF PROPERTY, RIGHTS OF PUBLICITY OR
-                  PRIVACY, DEFAMATION OR PORTRAYAL IN A FALSE LIGHT, WHETHER
-                  INTENTIONAL OR UNINTENTIONAL), WHETHER UNDER A THEORY OF
-                  CONTRACT, TORT (INCLUDING NEGLIGENCE), WARRANTY, OR OTHER
-                  THEORY.
-                </p>
-              </section>
+
               <section id="general-release">
                 <h2 className="font-bold">General Release</h2>
                 <p>
@@ -273,24 +256,31 @@ const Rules = () => {
                   time of executing the release and that, if known by him or
                   her, would have materially affected his or her settlement with
                   the debtor or released party.” <br />
-                  Use of Winner Name, Likeness, and Information. Except where
-                  prohibited by law, the winner hereby grants the Sponsor and
-                  its representatives a perpetual, irrevocable, worldwide,
-                  royalty-free, non-exclusive and sub-licensable right and
-                  license to distribute, publicly display and use his/her name,
-                  photograph, voice, likeness and information about the prize
-                  award, in any way, at any time, in any and all media,
-                  including without limitation, without any additional approval
-                  or consideration, in connection with the promotion and
-                  marketing of this and other sweepstakes offers and Sponsor’s
-                  mission to use winner's name, hometown, likeness, and/or Prize
-                  information, without limitation, for promotional purposes and
-                  without further permission or compensation. As a condition of
-                  being awarded any Prize, except where prohibited by law,
-                  winner may be required to execute a release consenting to the
-                  use of his or her name, hometown, likeness, and/or Prize
-                  information, without limitation, for promotional purposes by
-                  Sponsor without further permission or compensation.
+                </p>
+              </section>
+              <section id="winner-agreement">
+                <h2 className="font-bold">
+                  Use of Winner Name, Likeness, and Information.
+                </h2>
+                <p>
+                  Except where prohibited by law, the winner hereby grants the
+                  Sponsor and its representatives a perpetual, irrevocable,
+                  worldwide, royalty-free, non-exclusive and sub-licensable
+                  right and license to distribute, publicly display and use
+                  his/her name, photograph, voice, likeness and information
+                  about the prize award, in any way, at any time, in any and all
+                  media, including without limitation, without any additional
+                  approval or consideration, in connection with the promotion
+                  and marketing of this and other sweepstakes offers and
+                  Sponsor’s mission to use winner's name, hometown, likeness,
+                  and/or Prize information, without limitation, for promotional
+                  purposes and without further permission or compensation. As a
+                  condition of being awarded any Prize, except where prohibited
+                  by law, winner may be required to execute a release consenting
+                  to the use of his or her name, hometown, likeness, and/or
+                  Prize information, without limitation, for promotional
+                  purposes by Sponsor without further permission or
+                  compensation.
                 </p>
               </section>
               <section id="affadavit-release">

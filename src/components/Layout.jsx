@@ -7,7 +7,7 @@ const Layout = () => {
       <header>
         <NavBar />
       </header>
-      <main className="flex-grow pt-36 px-4 pb-84 md:pb-0">
+      <main className="flex-grow pt-24 px-4 pb-84 md:pb-0">
         <Outlet />
       </main>
       <footer className="mt-auto">

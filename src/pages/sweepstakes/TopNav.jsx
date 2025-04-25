@@ -3,21 +3,27 @@ import React from 'react';
 const TopNav = () => {
   return (
     <nav className="w-full p-12">
-      <ul className="flex flex-row justify-center items-center gap-24">
+      <ul className="text-xs md:text-sm flex flex-row justify-center items-center gap-18 ">
         <li>
-          <a href="#">Beyonce</a>
+          <a href="#" className="hover:underline">
+            Beyonce
+          </a>
         </li>
         <li>
           <a href="#">Kendrick</a>
         </li>
         <li>
-          <a href="#">Chris Brown</a>
+          <a href="#" className=" w-24 hover:underline">
+            Chris Brown
+          </a>
         </li>
         <li>
           <a href="#">Sir</a>
         </li>
         <li>
-          <a href="#">The Weekend</a>
+          <a href="#" className=" w-24">
+            The Weekend
+          </a>
         </li>
       </ul>
     </nav>
