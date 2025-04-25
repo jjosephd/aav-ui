@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy';
 import Beyonce from './pages/beyonce/Beyonce';
 import Home from './pages/home/Home';
+import Rules from './pages/sweepstakes/Rules';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="campaigns/beyonce" element={<Beyonce />} />
           <Route path="campaigns/kendrick" element={<Beyonce />} />
+          <Route path="/sweepstakes/rules" element={<Rules />} />
         </Route>
       </Routes>
     </>

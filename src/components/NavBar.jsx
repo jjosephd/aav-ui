@@ -39,7 +39,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className="privacy-link hidden md:block">
-          <Link to="/privacy-policy">
+          <Link to="/sweepstakes/rules">
             <span className="text-white inline-block transform transition-transform duration-300 hover:scale-105">
               Sweepstakes Rules
             </span>

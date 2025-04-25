@@ -112,13 +112,13 @@ const Carousel = () => {
       </div>
       <div className="flex justify-center gap-4 mt-6">
         <button
-          className="btn btn-primary"
+          className="btn bg-purple-900 hover:bg-purple-900"
           onClick={() => goToIndex(currentIndex - 1)}
         >
           <FaArrowLeft />
         </button>
         <button
-          className="btn btn-primary"
+          className="btn bg-purple-900 hover:bg-purple-900"
           onClick={() => goToIndex(currentIndex + 1)}
         >
           <FaArrowRight />
